@@ -15,11 +15,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
 button {
   all: unset;
 }
-
 nav {
   background-color: #0d1b2a;
   width: 100%;
@@ -36,13 +34,11 @@ nav {
   top: 0px;
   left: 0px;
 }
-
 ul {
   display: flex;
   gap: 1.2rem;
   list-style: none;
 }
-
 .link {
   text-decoration: none;
   color: #fff;
@@ -50,20 +46,17 @@ ul {
   padding: 0.5rem;
   position: relative;
 }
-
 .logo {
   width: 35px;
   height: 30px;
   border: 2px solid black;
   border-radius: 10px;
 }
-
 .menu-icon {
   display: none;
   width: 24px;
   height: 24px;
 }
-
 /* Media Query for Responsive behavior of the Navbar */
 @media only screen and (max-width: 600px) {
   .menu-icon {
@@ -74,7 +67,6 @@ ul {
     display: none;
   }
 }
-
 /* Link and Logo Hover Effects */
 .link::before {
   content: "";
