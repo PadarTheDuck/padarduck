@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Padarduck</title>
+    <link rel="icon" type="image/png" href="img/Padarduck.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script src="main.js"></script>
+    ^
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "y26d5RGj3HqhCDXja",
+        });
+      })();
+    </script>
   </head>
   <body>
-    <!--Header-->
-
     <!--<div class="header-container">
       <header class="header">
         <img src="img/Padarduck.png" class="Padarduck-Logo" />
@@ -29,8 +40,11 @@
         </div>
       </header>
     </div>-->
+
+    <!--Header-->
+
     <nav>
-      <a href="#" class="logo">
+      <a href="#" class="">
         <img src="img/Padarduck.png" class="logo" />
       </a>
       <ul>
@@ -51,6 +65,8 @@
         </svg>
       </button>
     </nav>
+
+    <!--Welcome-->
 
     <!--about-->
 
@@ -77,9 +93,11 @@
             ></dotlottie-player>
           </div>
           <div class="About-box2">
-            Hello! I am Padarduck, a passionate front-end developer. I have
-            worked on many websites already and also do Power Point! Hard work
-            is my hobby, and i love web development.
+            Hello! I am Padarduck, a passionate front-end developer.
+            <br />
+            I have worked on many websites already and also do Power Point!
+            <br />
+            Hard work is my hobby, and i love web development.
           </div>
         </div>
       </div>
@@ -93,11 +111,91 @@
           <h1 class="link1">Skills</h1>
         </div>
 
-        <div class="container3">
-          <div class="Skills-box1"></div>
-          <div class="Skills-box2"></div>
+        <div class="container4">
+          <div class="Skills-box1">
+            <img src="img/html-logo.png" class="html-logo" />
+            <a class="Skills-write">HTML</a>
+          </div>
+          <div class="Skills-box2">
+            <img src="img/CSS-logo.png" class="CSS-logo" />
+            <a class="Skills-write">CSS</a>
+          </div>
+          <div class="Skills-box3">
+            <img src="img/js-logo.png" class="js-logo" />
+            <a class="Skills-write">JavaScript</a>
+          </div>
+          <div class="Skills-box4">
+            <img src="img/python-logo.png" class="python-logo" />
+            <a class="Skills-write">Python</a>
+            (extra)
+          </div>
+          <div class="Skills-box5">
+            <img src="img/powerpoint-logo.png" class="powerpoint-logo" />
+            <a class="Skills-write">PowerPoint</a>
+            (extra)
+          </div>
         </div>
       </div>
     </div>
+
+    <!--FAQ-->
+
+    <!--Contact Me-->
+
+    <div class="container">
+      <div class="Cantact-conainer">
+        <div class="container2">
+          <h1 class="link1">Cantact Me</h1>
+        </div>
+
+        <div class="container3">
+          <div class="About-box1">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://lottie.host/37fb9c31-8170-4ba5-8163-a75d050de4d9/OtrI5v4Ncl.json"
+              background="##FFFFFF"
+              speed="1"
+              style="max-width: 400px; max-height: 400px"
+              loop
+              autoplay
+              direction="1"
+              mode="normal"
+            ></lottie-player>
+          </div>
+          <div class="About-box2">
+            <div>
+              <h5 for="name">Name</h5>
+              <input
+                type="text"
+                class="inputfield"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div>
+              <h5 for="email">Email</h5>
+              <input
+                type="email"
+                class="inputfield"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div>
+              <h5 for="message">Message</h5>
+              <textarea class="inputfield" id="message" rows="3"></textarea>
+            </div>
+            <button class="learn-more" onclick="sendMail()">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">SEND</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--foutter-->
   </body>
 </html>

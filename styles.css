@@ -54,6 +54,8 @@ ul {
 .logo {
   width: 35px;
   height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .menu-icon {
@@ -99,6 +101,22 @@ ul {
 }
 .logo:hover {
   opacity: 0.5;
+}
+.header-logos-1 {
+  width: 35px;
+  height: 35px;
+}
+.header-logos-2 {
+  width: 30px;
+  height: 30px;
+}
+.header-logos-1:hover {
+  width: 37px;
+  height: 37px;
+}
+.header-logos-2:hover {
+  width: 32px;
+  height: 32px;
 }
 
 /*
@@ -167,6 +185,8 @@ ul {
   }
 }
 */
+
+/* Welcome */
 
 /* about */
 
@@ -272,15 +292,25 @@ ul {
   width: 100%;
   max-width: 1100px;
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 100px;
   padding: 30px 10px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-top: 100px;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.container4 {
+  padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "eins eins zwei zwei drei drei"
+    "vier vier vier fünf fünf fünf";
+  justify-content: space-evenly;
+  align-items: center;
 }
 .Skills-box1 {
   background: transparent;
@@ -291,10 +321,12 @@ ul {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  width: 500px;
-  height: 400px;
+  max-width: 500px;
+  max-height: 400px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
+  grid-area: eins;
 }
 .Skills-box2 {
   background: transparent;
@@ -305,10 +337,12 @@ ul {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  width: 500px;
-  height: 400px;
+  max-width: 500px;
+  max-height: 400px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
+  grid-area: zwei;
 }
 .Skills-box3 {
   background: transparent;
@@ -319,10 +353,12 @@ ul {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  width: 500px;
-  height: 400px;
+  max-width: 500px;
+  max-height: 400px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
+  grid-area: drei;
 }
 .Skills-box4 {
   background: transparent;
@@ -333,10 +369,12 @@ ul {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  width: 500px;
-  height: 400px;
+  max-width: 550px;
+  max-height: 400px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
+  grid-area: vier;
 }
 .Skills-box5 {
   background: transparent;
@@ -347,8 +385,161 @@ ul {
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
-  width: 500px;
-  height: 400px;
+  max-width: 550px;
+  max-height: 400px;
+  min-height: 200px;
   justify-content: center;
   position: relative;
+  grid-area: fünf;
 }
+.html-logo {
+  max-width: 105px;
+  max-height: 105px;
+}
+.CSS-logo {
+  max-width: 105px;
+  max-height: 105px;
+}
+.js-logo {
+  max-width: 105px;
+  max-height: 105px;
+}
+.python-logo {
+  max-width: 105px;
+  max-height: 105px;
+}
+.powerpoint-logo {
+  max-width: 125px;
+  max-height: 125px;
+}
+.Skills-write {
+  margin-top: 7px;
+}
+
+/* FAQ */
+
+/* Contact Me */
+
+.Cantact-conainer {
+  background-color: #0d1b2a;
+  background-image: url(img/contact-us.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 500px;
+  margin-top: 100px;
+  padding: 30px 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h333 {
+  margin: 0px;
+}
+.inputfield {
+  max-width: 300px;
+  min-width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0d1b2a;
+  color: white;
+  border: 2px solid white;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  backdrop-filter: blur(50%);
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+/* foutter */
