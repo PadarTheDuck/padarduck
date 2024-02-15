@@ -21,7 +21,7 @@ button {
 nav {
   background-color: #0d1b2a;
   width: 100%;
-  max-width: 1700px;
+  max-width: 20000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,6 +179,26 @@ ul {
 */
 
 /* Welcome */
+.Welcome-container {
+  background-color: #0d1b2a;
+  background-image: url(img/welcome.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 500px;
+  margin-top: 70px;
+  padding: 30px 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 650px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* about */
 
@@ -197,11 +217,10 @@ ul {
   width: 100%;
   max-width: 1100px;
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 100px;
   padding: 30px 10px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-top: 650px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -409,6 +428,38 @@ ul {
 }
 
 /* FAQ */
+.FAQ-container {
+  background-color: #0d1b2a;
+  background-image: url(img/faq.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 500px;
+  margin-top: 100px;
+  padding: 30px 10px;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.FAQ-box1 {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  width: 1100px;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+}
 
 /* Contact Me */
 
@@ -535,3 +586,30 @@ button:hover .button-text {
 }
 
 /* foutter */
+/* ähem eigendlich footer (◕^^◕) */
+.footer {
+  background-color: #0d1b2a;
+  width: 100%;
+  max-width: 20000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+  position: relative;
+  bottom: 100px;
+  top: 0px;
+  left: 0px;
+  
+}
+
+/* GRUND FÜR GR0SSE ABSTÄNDE !!!!! FIXEN!!!! */
+.scroller { 
+  background-color: red; 
+  position: relative;
+  margin-bottom: 700px;
+
+}
