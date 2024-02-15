@@ -19,3 +19,17 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+// Scroll
+
+function aboutScroll() {
+  window.scrollTo(0, 650);
+}
+function skillsScroll() {
+  window.scrollTo(0, 1300);
+}
+function FAQScroll() {
+  window.scrollTo(0, 1950);
+}
+function contactScroll() {
+  window.scrollTo(0, 2600);
+}

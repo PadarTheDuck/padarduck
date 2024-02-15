@@ -188,11 +188,10 @@ ul {
   width: 100%;
   max-width: 1100px;
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 650px;
   padding: 30px 10px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-top: 650px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -216,11 +215,10 @@ ul {
   width: 100%;
   max-width: 1100px;
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 100px;
   padding: 30px 10px;
   border: 2px solid black;
   border-radius: 15px;
-  margin-top: 650px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -473,6 +471,7 @@ ul {
   max-width: 1100px;
   min-height: 500px;
   margin-top: 100px;
+  margin-bottom: 0px;
   padding: 30px 10px;
   border: 2px solid black;
   border-radius: 15px;
@@ -591,23 +590,23 @@ button:hover .button-text {
   background-color: #0d1b2a;
   width: 100%;
   max-width: 20000px;
+  height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
+  margin-top: 0;
   border: 2px solid black;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   z-index: 1;
   position: relative;
-  bottom: 100px;
-  top: 0px;
-  left: 0px;
 }
-
-/* GRUND FÜR GR0SSE ABSTÄNDE !!!!! FIXEN!!!! */
-.scroller {
-  background-color: red;
-  position: relative;
-  margin-bottom: 700px;
+.footerLogo {
+  max-width: 200px;
+  max-height: 200px;
+}
+.disclaimer {
+  max-width: 150px;
+  max-height: 150px;
 }

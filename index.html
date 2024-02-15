@@ -48,10 +48,10 @@
         <img src="img/Padarduck.png" href="#welcome-section" class="logo" />
       </a>
       <ul>
-        <li><a href="#about-section" class="link">about</a></li>
-        <li><a href="#skills-section" class="link">skills</a></li>
-        <li><a href="#faq-section" class="link">FAQ</a></li>
-        <li><a href="#contact-section" class="link">contact</a></li>
+        <li><a onclick="aboutScroll()" class="link">about</a></li>
+        <li><a onclick="skillsScroll()" class="link">skills</a></li>
+        <li><a onclick="FAQScroll()" class="link">FAQ</a></li>
+        <li><a onclick="contactScroll()" class="link">contact</a></li>
       </ul>
       <button class="menu-icon">
         <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,8 @@
     </nav>
 
     <!--Welcome-->
-    <div class="container" id="welcome-section">
+
+    <div class="container">
       <div class="Welcome-container">
         <div class="container2">
           <h1 class="link1">Welcome!</h1>
@@ -162,7 +163,6 @@
     </div>
 
     <!--FAQ-->
-    <div id="faq-section" class="scroller"></div>
     <div class="container">
       <div class="FAQ-container">
         <div class="container2">
@@ -246,16 +246,19 @@
     </div>
 
     <!--foutter-->
-    <nav class="footer">
+    <footer class="footer">
       <a href="#welcome-section" class="">
-        <img src="img/Padarduck.png" class="logo" />
+        <img src="img/Padarduck.png" class="footerLogo" />
       </a>
       <ul>
-        <li><a href="#about-section" class="link">about</a></li>
-        <li><a href="#skills-section" class="link">skills</a></li>
-        <li><a href="#faq-section" class="link">FAQ</a></li>
-        <li><a href="#contact-section" class="link">contact</a></li>
+        <li><a onclick="aboutScroll()" class="link">about</a></li>
+        <li><a onclick="skillsScroll()" class="link">skills</a></li>
+        <li><a onclick="FAQScroll()" class="link">FAQ</a></li>
+        <li><a onclick="contactScroll()" class="link">contact</a></li>
       </ul>
+      <a href="discliamer.html">
+        <img src="img/aufmerksam.png" class="disclaimer" />
+      </a>
       <button class="menu-icon">
         <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -267,6 +270,6 @@
           />
         </svg>
       </button>
-    </nav>
+    </footer>
   </body>
 </html>
